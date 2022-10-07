@@ -50,59 +50,34 @@ body {
   height: 30px;
   border-radius: 50%;
   color: rgb(109 125 140);
-  background-color: rgb(241, 242, 246);
 }
 
 .back-to-home:hover {
   cursor: pointer;
-  background-color: rgb(225, 226, 228);
+  background-color: rgb(241, 242, 246);
 }
 
-.toolbar {
-  display: flex;
-  align-items: center;
-  padding: 6px 5px;
-  box-sizing: border-box;
+.quill {
   width: 100%;
-  height: 50px;
+  height: 85%;
+}
+
+.ql-toolbar.ql-snow {
+  border: none;
   border-top: 2px solid rgb(224 228 237);
   border-bottom: 2px solid rgb(224 228 237);
   background-color: rgb(247 249 252);
 }
 
-.toolbar-icons {
-  width: 26px;
-  height: 26px;
-  padding: 2px;
-  margin: 2px 4px;
-  color: rgb(109 125 140);
+.ql-container.ql-snow {
+  border: none;
 }
 
-.toolbar-icons:hover {
+.ql-toolbar button:hover {
   color: #2073fc;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #d6e4fc;
-  cursor: pointer;
 }
-
-.writing-area {
-  width: 100%;
-  margin: 0px 10px;
-  height: 100%;
-  padding: 10px;
-  font-size: 20px;
-  resize: none;
-  border: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  /* overflow-y: scroll; */
-}
-
-.writing-area:focus {
-  outline: none;
-  border: none;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
