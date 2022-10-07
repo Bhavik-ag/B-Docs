@@ -1,0 +1,142 @@
+* {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(182, 224, 233, 1) 0%,
+    rgba(196, 225, 226, 1) 52%,
+    rgba(182, 224, 233, 1) 95%
+  );
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.document-container {
+  width: 80vw;
+  height: 60vh;
+  margin: 5vh 0vh;
+  display: flex;
+  max-width: 900px;
+  min-height: 700px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px 5px;
+  height: 50px;
+}
+
+.back-to-home {
+  margin: 2px;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: rgb(109 125 140);
+  background-color: rgb(241, 242, 246);
+}
+
+.back-to-home:hover {
+  cursor: pointer;
+  background-color: rgb(225, 226, 228);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 6px 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border-top: 2px solid rgb(224 228 237);
+  border-bottom: 2px solid rgb(224 228 237);
+  background-color: rgb(247 249 252);
+}
+
+.toolbar-icons {
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  margin: 2px 4px;
+  color: rgb(109 125 140);
+}
+
+.toolbar-icons:hover {
+  color: #2073fc;
+  border-radius: 5px;
+  background-color: #d6e4fc;
+  cursor: pointer;
+}
+
+.writing-area {
+  width: 100%;
+  margin: 0px 10px;
+  height: 100%;
+  padding: 10px;
+  font-size: 20px;
+  resize: none;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* overflow-y: scroll; */
+}
+
+.writing-area:focus {
+  outline: none;
+  border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(227, 227, 227);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(207, 207, 207);
+}
+
+.docTitle {
+  font-size: 18px;
+  font-weight: 200;
+  outline: none;
+  border: none;
+  width: max-content;
+  margin: 0px 5px;
+}
+
+.docTitleEdit {
+  font-size: 18px;
+  font-weight: 200;
+  outline: none;
+  border: none;
+  width: max-content;
+  margin: 0px 5px;
+}
