@@ -1,4 +1,4 @@
-import {useEffect, useState, ChangeEvent, FC} from 'react';
+import {useState, ChangeEvent, FC} from 'react';
 
 interface Props {
   docTitle: string;
@@ -7,10 +7,6 @@ interface Props {
 const Title: FC<Props> = ({docTitle}) => {
   const [title, setTitle] = useState<string>(docTitle);
   const [focus, setFocus] = useState<boolean>(false);
-
-  useEffect(() => {
-    console.log(title);
-  }, [title]);
 
   const eventHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setTitle(e.target.value);

@@ -1,8 +1,14 @@
 import Document from './components/document';
+import Navbar from './components/navbar';
 import './styles.css';
 
 function App() {
-  return <Document />;
+  return (
+    <>
+      <Navbar />
+      <Document />
+    </>
+  );
 }
 
 export default App;

@@ -6,13 +6,15 @@ import {BsArrowLeftShort} from 'react-icons/bs';
 
 const Document = () => {
   return (
-    <div className="document-container">
-      <div className="title-container">
-        <BsArrowLeftShort className="back-to-home" />
-        <Title docTitle="Untitiled Document" />
-      </div>
+    <div className="doc-section">
+      <div className="document-container">
+        <div className="title-container">
+          <BsArrowLeftShort className="back-to-home" />
+          <Title docTitle="Untitiled Document" />
+        </div>
 
-      <Editor placeholder="Start writing here...." />
+        <Editor placeholder="Start writing here...." />
+      </div>
     </div>
   );
 };
