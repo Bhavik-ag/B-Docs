@@ -1,4 +1,4 @@
-import React, {useState, FC} from 'react';
+import {useState, FC, useEffect} from 'react';
 import ReactQuill from 'react-quill';
 
 interface Props {
@@ -8,7 +8,9 @@ interface Props {
 const Editor: FC<Props> = ({placeholder}) => {
   const [editorHtml, setEditorHtml] = useState<string>('');
 
-  console.log(editorHtml);
+  useEffect(() => {
+    console.log(editorHtml);
+  }, [editorHtml]);
 
   const formats = [
     'header',
@@ -46,6 +48,7 @@ const Editor: FC<Props> = ({placeholder}) => {
 
   return (
     <ReactQuill
+      value={editorHtml}
       onChange={setEditorHtml}
       modules={modules}
       formats={formats}
